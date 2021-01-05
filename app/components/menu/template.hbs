@@ -1,0 +1,39 @@
+<nav local-class="navbar" data-test-display="site-menu">
+  <div local-class="content">
+    <div local-class="brand">
+      <a class="navbar-item" href="#top">
+        <FaIcon @prefix="fas" @icon="home" />
+      </a>
+
+      <button type="button" local-class="burger" class={{if this.showMenu "is-active"}} {{on "click" (fn this.toggleMenu 'showMenu')}} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <EspMenu @position="right" @pushMenu={{true}} @open={{this.showMenu}} local-class="slide-menu">
+      {{#each this.items as |item|}}
+        <a local-class="navbar-item" href={{item.href}}>
+          <span class="icon">
+            <FaIcon @icon={{item.icon}} />
+          </span>
+          <span>{{item.name}}</span>
+        </a>
+      {{/each}}
+    </EspMenu>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        {{#each this.items as |item|}}
+          <a local-class="navbar-item" href={{item.href}}>
+            <span class="icon">
+              <FaIcon @icon={{item.icon}} />
+            </span>
+            <span>{{item.name}}</span>
+          </a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</nav>

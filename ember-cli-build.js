@@ -4,7 +4,23 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    sassOptions: {
+      includePaths: []
+    },
+    minifyCSS: {
+      options: { processImport: true }
+    },
+    postcssOptions: {
+      compile: {
+        enabled: false
+      },
+      filter: {
+        enabled: true,
+        plugins: [
+          { module: require('postcss-preset-env') }
+        ]
+      }
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -19,6 +35,9 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+
+  // app.import("node_modules/bulma/bulma");
+  // app.import('public/assets/css/bulmaswatch.min.css');
 
   return app.toTree();
 };

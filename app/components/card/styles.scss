@@ -1,0 +1,39 @@
+
+.card {
+  composes: card from global;
+  margin-bottom: 2em;
+
+  &:last-of-type {
+    margin-bottom: 1em;
+  }
+}
+
+.card-header {
+  composes: card-header from global;
+}
+
+.card-header-title {
+  composes: card-header-title from global;
+}
+
+.card-header-icon {
+  composes: card-header-icon from global;
+  max-width: 4em;
+  height: auto;
+}
+
+.card-image {
+  composes: card-image from global;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.card-content {
+  composes: card-content from global;
+
+  & h3 {
+    text-align: center;
+  }
+}

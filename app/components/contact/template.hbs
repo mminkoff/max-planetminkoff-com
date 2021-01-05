@@ -1,0 +1,48 @@
+<div local-class="contact-form" data-test-display="contact-form">
+  <fieldset disabled={{@isSubmitted}}>
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <Input class="input" @type="text" @placeholder="Text input" @value={{this.name}} data-test-input="name" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control has-icons-left">
+        <Input class="input" @type="email" @placeholder="Email input" @value={{this.email}} data-test-input="email" />
+        <span class="icon is-small is-left">
+          <FaIcon @prefix="fas" @icon="envelope" />
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <Textarea class="textarea" @placeholder="Please include a note" @value={{this.message}} data-test-input="message"></Textarea>
+      </div>
+    </div>
+
+    <div class="field is-grouped has-text-centered">
+      <div local-class="submit-control">
+        <div class="level-left">
+          <button type="submit" local-class="submit-button {{if @isSubmitted 'submitted'}}" {{on "click" this.submitContact}} data-test-action="submit-contact">
+            <span class="icon">
+              <FaIcon prefix="fas" @icon="envelope" />
+            </span>
+            <span>Submit</span>
+          </button>
+        </div>
+        <div class="level-right">
+          {{#if @isSubmitted}}
+            <div local-class="success-message" data-test-display="success-message">
+              Thanks for getting in touch!
+            </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</div>

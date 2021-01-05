@@ -1,0 +1,81 @@
+@value cyber-grape, lavender-blue, sky-blue-crayola, dutch-white from "max/styles/app.scss";
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.social-button {
+  composes: button from global;
+  composes: is-link from global;
+
+  & :global(svg) {
+    margin-right: 0.4em;
+  }
+}
+
+.section {
+  composes: section from global;
+  padding: 4rem 1.5rem 1rem;
+}
+
+.section-title {
+  composes: title from global;
+  composes: is-2 from global;
+  padding-top: 1rem;
+}
+
+.bio {
+  margin-bottom: 1.5em;
+  max-width: 1000px;
+
+  & strong {
+    color: #F4E4BA;
+  }
+}
+
+.skills {
+  padding: 1em;
+  background-color: lavender-blue;
+
+  & h4:global(.title) {
+    margin: 0;
+  }
+}
+
+.tags {
+  composes: level from global;
+  composes: tags from global;
+  composes: custom-tags from global;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.tag {
+  composes: tag from global;
+  composes: level-item from global;
+  composes: is-light from global;
+}
+
+.portfolio-container {
+  composes: container from global;
+}
+
+.card {
+  composes: card from global;
+  margin-bottom: 2em;
+}
+.card-header {
+  composes: card-header from global;
+}
+
+.card-header-title {
+  composes: card-header-title from global;
+  // display: block;
+}
+
+.card-header-icon {
+  composes: card-header-icon from global;
+  max-width: 4em;
+  height: auto;
+}

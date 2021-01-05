@@ -1,0 +1,75 @@
+@value cyber-grape, lavender-blue, sky-blue-crayola, dutch-white from "max/styles/app.scss";
+
+:global(.cbp-spmenu-vertical) {
+  padding-top: 3.25rem;
+}
+
+:global(.navbar-burger) {
+  z-index: 2000;
+}
+
+.navbar {
+  composes: navbar from global;
+  composes: is-fixed-top from global;
+  composes: has-background-primary from global;
+
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.content {
+  composes: content from "../../styles/application";
+
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+}
+
+.brand {
+  composes: navbar-brand from global;
+
+  flex-grow: 1;
+
+  & a {
+    color: cyber-grape;
+    color: lavender-blue;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+.burger {
+  composes: navbar-burger from global;
+  composes: burger from global;
+  color: cyber-grape !important;
+  background-color: dutch-white !important;
+  border: none;
+
+  &:global(.is-active), &:focus {
+    background-color: sky-blue-crayola !important;
+    border-style: hidden;
+    outline: none;
+  }
+}
+
+.slide-menu {
+  background-color: sky-blue-crayola;
+
+  & .navbar-item {
+    color: cyber-grape !important;
+    font-weight: bold;
+  }
+}
+
+.navbar-item {
+  composes: navbar-item from global;
+  color: lavender-blue !important;
+
+  &:focus, &:focus-within, &:hover, &:global(.is-active) {
+    color: cyber-grape !important;
+    background-color: dutch-white !important;
+  }
+
+  & :global(.icon) {
+    margin-right: 0.2em;
+  }
+}

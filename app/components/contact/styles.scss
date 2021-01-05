@@ -1,0 +1,27 @@
+.contact-form {
+  composes: box from global;
+}
+
+.submit-button {
+  composes: button from global;
+  composes: is-link from global;
+  composes: is-large from global;
+  composes: level-item from global;
+
+  margin-left: 0;
+}
+
+.submitted {
+  composes: is-success from global;
+}
+
+.success-message {
+  composes: level-item from global;
+  margin: 0.25em 0.5em;
+}
+
+.submit-control {
+  composes: control from global;
+  composes: level from global;
+  flex-grow: 1;
+}

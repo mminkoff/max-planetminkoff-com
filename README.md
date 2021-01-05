@@ -1,7 +1,12 @@
 # max
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a personal website I put together both to present a
+personal portfolio as well as provide an example of my code
+here.
+
+The site is built using the [EmberJS](https://emberjs.com) JavaScript framework, with some of my favorite basic add-ons including [ember-fontawesome](https://github.com/FortAwesome/ember-fontawesome), [ember-css-modules](https://github.com/salsify/ember-css-modules), [ember-responsive](https://github.com/freshbooks/ember-responsive), and the [Bulma](https://bulma.io/) CSS framework.
+
+It is hosted on [AWS S3](https://aws.amazon.com/s3/) as a static website, and the contact form uses a [https://aws.amazon.com/lambda/] function to send via [Amazon Simple Email Service](https://aws.amazon.com/ses/), triggered via a resource on [Amazon API Gateway](https://aws.amazon.com/api-gateway/).
 
 ## Prerequisites
 
@@ -44,10 +49,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 

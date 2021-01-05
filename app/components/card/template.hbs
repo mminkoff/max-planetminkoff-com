@@ -1,0 +1,34 @@
+<div local-class="card">
+  <header local-class="card-header">
+    <p local-class="card-header-title">
+      <span>
+        {{#if @titleLink}}
+          <a href={{@titleLink}} target={{this.target}}>
+            {{@title}}
+          </a>
+        {{else}}
+          {{@title}}
+        {{/if}}
+      </span>
+    </p>
+    {{#if (or @headerIconName @headerIconSrc)}}
+      <div local-class="card-header-icon">
+        {{#if @headerIconName}}
+          <FaIcon @icon={{@headerIconName}} @prefix={{@headerIconPrefix}} @size={{@headerIconSize}} />
+        {{else}}
+          <img src={{@headerIconSrc}} alt={{@headerIconAlt}}>
+        {{/if}}
+      </div>
+    {{/if}}
+  </header>
+
+  {{#if @imageSrc}}
+    <div local-class="card-image">
+      <img src={{@imageSrc}} alt={{@imageAlt}}>
+    </div>
+  {{/if}}
+
+  <div local-class="card-content">
+    {{yield}}
+  </div>
+</div>
