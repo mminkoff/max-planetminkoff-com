@@ -1,4 +1,4 @@
-# max
+# max-planetminkoff-com
 
 This is a personal website I put together both to present a
 personal portfolio as well as provide an example of my code
