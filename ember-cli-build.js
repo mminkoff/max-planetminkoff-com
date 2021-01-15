@@ -8,7 +8,7 @@ module.exports = function(defaults) {
       includePaths: []
     },
     minifyCSS: {
-      options: { processImport: true }
+      options: { processImport: false }
     },
     postcssOptions: {
       compile: {
