@@ -2,7 +2,7 @@
 
 {{outlet}}
 
-<section class="hero is-primary is-fullheight is-fullheight-with-navbar">
+<section local-class="hero">
   <div class="hero-body">
     <div local-class="content">
       <div class="container">Hello! I am
@@ -17,194 +17,158 @@
           and <strong>Architect</strong> who <strong>delights in collaborating</strong> with stakeholders and team members
           to <strong>create and improve</strong> how people work, learn, and play. That <strong>rare individual</strong>
           able to <strong>explain complex concepts in simple terms</strong> and <strong>translate business needs
-          into technical solutions</strong>. <strong>Wharton MBA</strong> with excellent presentation, problem
-          solving, and communication skills. <strong>Early-stage startup veteran</strong> happiest in an
-          entrepreneurial environment of any size that emphasizes <strong>enduring value over
-          short-term payoff</strong>.
-        </p>
-        <div class="has-addons">
-          <a href="https://github.com/mminkoff" target="_maxgithub" local-class="social-button">
-            <FaIcon @icon="github" @prefix="fab" />
-            Github
-          </a>
-          <a href="https://www.linkedin.com/in/max-minkoff/" target="_maxlinkedin" local-class="social-button">
-            <FaIcon @icon="linkedin" @prefix="fab" />
-            LinkedIn
-          </a>
+            into technical solutions</strong>. <strong>Wharton MBA</strong> with excellent presentation, problem
+            solving, and communication skills. <strong>Early-stage startup veteran</strong> happiest in an
+            entrepreneurial environment of any size that emphasizes <strong>enduring value over
+              short-term payoff</strong>.
+            </p>
+            <div class="has-addons">
+              <a href="https://github.com/mminkoff" target="_maxgithub" local-class="social-button">
+                <FaIcon @icon="github" @prefix="fab" />
+                Github
+              </a>
+              <a href="https://www.linkedin.com/in/max-minkoff/" target="_maxlinkedin" local-class="social-button">
+                <FaIcon @icon="linkedin" @prefix="fab" />
+                LinkedIn
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<div local-class="skills">
-  <div local-class="content">
-    <h4 class="title is-4">Skills Include</h4>
-    <div local-class="tags">
-      <span local-class="tag">JavaScript</span>
-      <span local-class="tag">EmberJS</span>
-      <span local-class="tag">HTML</span>
-      <span local-class="tag">CSS</span>
-      <span local-class="tag">SASS</span>
-      <span local-class="tag">PostCSS</span>
-      <span local-class="tag">JSON</span>
-      <span local-class="tag">JSONAPI</span>
-      <span local-class="tag">AJAX</span>
-      <span local-class="tag">jQuery</span>
-      <span local-class="tag">Objective-C</span>
-      <span local-class="tag">RESTful API</span>
-      <span local-class="tag">Ruby on Rails</span>
-      <span local-class="tag">Ruby</span>
-      <span local-class="tag">Postgres</span>
-      <span local-class="tag">MySQL</span>
-      <span local-class="tag">WebSocket</span>
-      <span local-class="tag">Test-Driven Development</span>
-      <span local-class="tag">RSpec</span>
-      <span local-class="tag">UI/UX</span>
-      <span local-class="tag">Heroku</span>
-      <span local-class="tag">Git</span>
-      <span local-class="tag">Yarn</span>
-      <span local-class="tag">NPM</span>
-      <span local-class="tag">Amazon Web Services (AWS)</span>
-      <span local-class="tag">S3</span>
-      <span local-class="tag">CloudFront</span>
-      <span local-class="tag">IAM</span>
-    </div>
-  </div>
-</div>
+    <section local-class="section" id="portfolio">
+      <div local-class="content">
+        <div class="container">
+          <div class="section-heading">
+            <h3 local-class="section-title">Portfolio</h3>
+            <h4 class="subtitle is-5">Some recent and/or interesting projects</h4>
+          </div>
+          <br>
 
-<section local-class="section" id="portfolio">
-  <div local-class="content">
-    <div class="container">
-      <div class="section-heading">
-        <h3 local-class="section-title">Portfolio</h3>
-        <h4 class="subtitle is-5">Some recent and/or interesting projects</h4>
-      </div>
-      <br>
+          <div local-class="portfolio-container">
+            <div class="columns">
+              <div class="column is-4">
+                <Card
+                @titleLink="https://goexp.it"
+                @title="eThree's goexp.it"
+                @headerIconSrc="images/ethree-logo-blue-white.png"
+                @headerIconAlt="eThree"
+                @imageSrc="images/heather-mitts-goexp-it.png"
+                @imageAlt="Heather Mitts on goexp.it"
+                >
+                Versatile <strong>web-based learning experience platform</strong>, enabling communicators of
+                all types to engage consumers with students and customers. Built using
+                <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong> and <strong><a href="https://rubyonrails.org/" target="_rails">Ruby on Rails</a></strong> on <strong><a href="https://www.heroku.com/" target="_heroku">Heroku</a></strong>.
+              </Card>
 
-      <div local-class="portfolio-container">
-        <div class="columns">
-          <div class="column is-4">
-            <Card
-              @titleLink="https://goexp.it"
-              @title="eThree's goexp.it"
-              @headerIconSrc="images/ethree-logo-blue-white.png"
-              @headerIconAlt="eThree"
-              @imageSrc="images/heather-mitts-goexp-it.png"
-              @imageAlt="Heather Mitts on goexp.it"
-            >
-              Versatile <strong>web-based learning experience platform</strong>, enabling communicators of
-              all types to engage consumers with students and customers. Built using
-              <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong> and <strong><a href="https://rubyonrails.org/" target="_rails">Ruby on Rails</a></strong> on <strong><a href="https://www.heroku.com/" target="_heroku">Heroku</a></strong>.
-            </Card>
-
-            <Card
+              <Card
               @titleLink="https://ourgroove.studio"
               @title="OurGroove.Studio"
               @imageSrc="images/ourgroovestudio.png"
               @imageAlt="ourgroove.studio screenshot"
               >
-                An effort to solve the problem of making music together over video conference,
-                it allows music leaders to upload MP3s and control synchronized playback on
-                any number of remote computers.  Front end prototyped in
-                <strong><a href="https://reactjs.org/" target="_react">ReactJS</a></strong> then
-                converted to <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong>.
-                Back end uses <strong><a href="https://rubyonrails.org/" target="_rails">Ruby on Rails</a></strong>
-                on <strong><a href="https://www.heroku.com/" target="_heroku">Heroku</a></strong>.
-                Real-time communication uses Websocket via Rails' <strong><a href="https://guides.rubyonrails.org/action_cable_overview.html" target="_rails">Action Cable</a></strong>.
+              An effort to solve the problem of making music together over video conference,
+              it allows music leaders to upload MP3s and control synchronized playback on
+              any number of remote computers.  Front end prototyped in
+              <strong><a href="https://reactjs.org/" target="_react">ReactJS</a></strong> then
+              converted to <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong>.
+              Back end uses <strong><a href="https://rubyonrails.org/" target="_rails">Ruby on Rails</a></strong>
+              on <strong><a href="https://www.heroku.com/" target="_heroku">Heroku</a></strong>.
+              Real-time communication uses Websocket via Rails' <strong><a href="https://guides.rubyonrails.org/action_cable_overview.html" target="_rails">Action Cable</a></strong>.
             </Card>
           </div>
 
           <div class="column is-4">
             <Card
-              @title="Cookulus Perfect Cookie Recipes"
-              @headerIconSrc="images/cookulus-app.jpeg"
-              @headerIconAlt="cookulus app"
-              @imageSrc="images/Cookulus-Full-screen.jpg"
-              @imageAlt="Cookulus screenshot"
+            @title="Cookulus Perfect Cookie Recipes"
+            @headerIconSrc="images/cookulus-app.jpg"
+            @headerIconAlt="cookulus app"
+            @imageSrc="images/Cookulus-Full-screen.jpg"
+            @imageAlt="Cookulus screenshot"
             >
-              Unique <strong>configurable cookie recipe app</strong>, adjusting recipes
-              to deliver crispy or soft, chewy or crumbly, and thin or thick cookies.
-              Read what <strong><a href="https://www.newsweek.com/2014/03/14/downloading-delicious-cookie-247931.html
+            Unique <strong>configurable cookie recipe app</strong>, adjusting recipes
+            to deliver crispy or soft, chewy or crumbly, and thin or thick cookies.
+            Read what <strong><a href="https://www.newsweek.com/2014/03/14/downloading-delicious-cookie-247931.html
               " target="_newsweek">Newsweek had to say</a></strong> about it.
             </Card>
 
             <Card
-              @titleLink="https://github.com/mminkoff/ember-filestack"
-              @title="ember-filestack"
-              @headerIconName="github"
-              @headerIconPrefix="fab"
-              @headerIconSize="2x"
+            @titleLink="https://github.com/mminkoff/ember-filestack"
+            @title="ember-filestack"
+            @headerIconName="github"
+            @headerIconPrefix="fab"
+            @headerIconSize="2x"
             >
-              Ember Add-On providing <strong>file picking, storing, and converting functionality</strong>
-              from <a href="https://www.filestack.com/">Filestack</a> using <a href="https://github.com/filestack/filestack-js">filestack-js</a>.
-            </Card>
+            Ember Add-On providing <strong>file picking, storing, and converting functionality</strong>
+            from <a href="https://www.filestack.com/">Filestack</a> using <a href="https://github.com/filestack/filestack-js">filestack-js</a>.
+          </Card>
 
-            <Card
-              @headerIconSrc="images/uw.png"
-              @headerIconAlt="university of washington"
-              @titleLink="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.75.1545&rep=rep1&type=pdf"
-              @target="_thesis"
-              @title="Master's Thesis"
-              @imageSrc="images/thesis.png"
-              @imageAlt="Master's thesis cover"
-            >
-              My design for a <strong>Virtual Reality system architecture</strong> when I studied
-              <strong>Industrial Engineering/Human Factors</strong>
-              (i.e. user interface) and had a research fellowship in the
-              <strong><a href="https://archive.seattletimes.com/archive/?date=20040409&slug=pacific-phit11" target="_hitl">Human Interface Technology Lab</a></strong> doing VR work.  Turns out
-              to have been consistent with the <strong><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_hitl">MVC Pattern</a></strong>, in that the design included
-              independent "displays" (i.e. views) that were responsible for low-latency
-              UI, models, and controllers that connected elements to a network-distributed
-              database.
-            </Card>
-          </div>
-
-          <div class="column is-4">
-            <Card
-              @titleLink="https://schoolsoutindefinitely.com"
-              @title="School's Out Indefinitely"
-              @headerIconSrc="images/schoolsout-icon.png"
-              @headerIconAlt="school's out Indefinitely"
-              @imageSrc="images/schoolsout.png"
-              @imageAlt="schoolsoutindefinitely.com screenshot"
-            >
-              Simple website curating virtual learning resources during the 2020 pandemic and beyond.
-              Uses <a href="airtable.com">Airtable.com</a> for data storage and otherwise static <a href="https://emberjs.com/" target="_ember">EmberJS</a>
-              site hosted on <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong>.  You can <strong><a href="https://github.com/schoolsOut/schoolsOut">view the code here</a></strong>.
-            </Card>
-
-            <Card
-              @title="This Website"
-              @headerIconName="github"
-              @headerIconPrefix="fab"
-              @headerIconSize="2x"
-              @imageSrc="images/maxportfolio.png"
-              @imageAlt="max's portfolio website"
-            >
-              Simple website to highlight some of my projects and demonstrate
-              some simple code.  Uses <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong> and <strong><a href="https://bulma.io/" target="_bulma">Bulma CSS Framework</a></strong>, hosted on
-              <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong> using <strong>S3</strong> for the website and <strong><a href="https://aws.amazon.com/api-gateway" target="_aws">API Gateway</a></strong>,
-              <strong><a href="https://aws.amazon.com/lambda" target="_aws">AWS Lambda</a></strong>, and <strong><a href="https://aws.amazon.com/ses" target="_aws">Simple Email Service</a></strong> for the contact form.
-            </Card>
-
-            <Card
-              @titleLink="https://bethsholom5781.org"
-              @title="Beth Sholom Livestream"
-              @headerIconSrc="images/Beth-Sholom-logo.png"
-              @headerIconAlt="Beth Sholom Congregation"
-              @imageSrc="images/bethsholom5781.png"
-              @imageAlt="bethsholom5781.org screenshot"
-              >
-                Designed, installed, and operated <strong>three-camera remote-controlled livestream</strong>
-                for over <strong>1,000 congregants at historic synagogue</strong>.  Created alternate website
-                to avoid the inevitable server overload at primary website using <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong>, <strong><a href="https://bulma.io/" target="_bulma">Bulma</a></strong>, and <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong>.
-            </Card>
-          </div>
-        </div>
+          <Card
+          @headerIconSrc="images/uw.png"
+          @headerIconAlt="university of washington"
+          @titleLink="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.75.1545&rep=rep1&type=pdf"
+          @target="_thesis"
+          @title="Master's Thesis"
+          @imageSrc="images/thesis.png"
+          @imageAlt="Master's thesis cover"
+          >
+          My design for a <strong>Virtual Reality system architecture</strong> when I studied
+          <strong>Industrial Engineering/Human Factors</strong>
+          (i.e. user interface) and had a research fellowship in the
+          <strong><a href="https://archive.seattletimes.com/archive/?date=20040409&slug=pacific-phit11" target="_hitl">Human Interface Technology Lab</a></strong> doing VR work.  Turns out
+          to have been consistent with the <strong><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_hitl">MVC Pattern</a></strong>, in that the design included
+          independent "displays" (i.e. views) that were responsible for low-latency
+          UI, models, and controllers that connected elements to a network-distributed
+          database.
+        </Card>
       </div>
-    </div>
-  </div>
+
+      <div class="column is-4">
+        <Card
+        @titleLink="https://schoolsoutindefinitely.com"
+        @title="School's Out Indefinitely"
+        @headerIconSrc="images/schoolsout-icon.png"
+        @headerIconAlt="school's out Indefinitely"
+        @imageSrc="images/schoolsout.png"
+        @imageAlt="schoolsoutindefinitely.com screenshot"
+        >
+        Simple website curating virtual learning resources during the 2020 pandemic and beyond.
+        Uses <a href="airtable.com">Airtable.com</a> for data storage and otherwise static <a href="https://emberjs.com/" target="_ember">EmberJS</a>
+        site hosted on <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong>.  You can <strong><a href="https://github.com/schoolsOut/schoolsOut">view the code here</a></strong>.
+      </Card>
+
+      <Card
+      @title="This Website"
+      @headerIconName="github"
+      @headerIconPrefix="fab"
+      @headerIconSize="2x"
+      @imageSrc="images/maxportfolio.png"
+      @imageAlt="max's portfolio website"
+      >
+      Simple website to highlight some of my projects and demonstrate
+      some simple code.  Uses <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong> and <strong><a href="https://bulma.io/" target="_bulma">Bulma CSS Framework</a></strong>, hosted on
+      <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong> using <strong>S3</strong> for the website and <strong><a href="https://aws.amazon.com/api-gateway" target="_aws">API Gateway</a></strong>,
+      <strong><a href="https://aws.amazon.com/lambda" target="_aws">AWS Lambda</a></strong>, and <strong><a href="https://aws.amazon.com/ses" target="_aws">Simple Email Service</a></strong> for the contact form.
+    </Card>
+
+    <Card
+    @titleLink="https://bethsholom5781.org"
+    @title="Beth Sholom Livestream"
+    @headerIconSrc="images/Beth-Sholom-logo.png"
+    @headerIconAlt="Beth Sholom Congregation"
+    @imageSrc="images/bethsholom5781.png"
+    @imageAlt="bethsholom5781.org screenshot"
+    >
+    Designed, installed, and operated <strong>three-camera remote-controlled livestream</strong>
+    for over <strong>1,000 congregants at historic synagogue</strong>.  Created alternate website
+    to avoid the inevitable server overload at primary website using <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong>, <strong><a href="https://bulma.io/" target="_bulma">Bulma</a></strong>, and <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong>.
+  </Card>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 
@@ -222,40 +186,40 @@
           <div class="column is-4">
 
             <Card
-              @title="King Triton's Trident"
-              @titleLink="https://mminkoff.github.io/trident/"
-              @imageSrc="images/trident.png"
-              @imageAlt="Max as King Triton with trident"
+            @title="King Triton's Trident"
+            @titleLink="https://mminkoff.github.io/trident/"
+            @imageSrc="images/trident.png"
+            @imageAlt="Max as King Triton with trident"
             >
-              Multi-functional (but sadly not magical) prop used in two local productions
-              of the Disney's The Little Mermaid musical.  <strong><a href="www.arduino.cc" target="_arduino">Arduino</a></strong>, buttons and sensors,
-              and over 90 leds.  Video, code, and every little detail <a href="https://mminkoff.github.io/trident/">here</a>.
-            </Card>
-          </div>
-
-          <div class="column is-4">
-            <Card
-              @headerIconName="theater-masks"
-              @headerIconPrefix="fas"
-              @headerIconSize="2x"
-              @title="Theater"
-              @imageSrc="images/nathan.png"
-              @imageAlt="Guys & Dolls"
-            >
-              I dipped my toe into theater in 2015 and quickly became hooked.
-              As much as I enjoy so many of the challenges and rewards of
-              theater, helping to build <strong>high performing teams</strong> within a
-              short period of time may be my favorite part and one of several
-              that directly reflect on <strong>how I approach my work</strong> as well.
-            </Card>
-          </div>
-
-          <div class="column is-4">
-          </div>
+            Multi-functional (but sadly not magical) prop used in two local productions
+            of the Disney's The Little Mermaid musical.  <strong><a href="www.arduino.cc" target="_arduino">Arduino</a></strong>, buttons and sensors,
+            and over 90 leds.  Video, code, and every little detail <a href="https://mminkoff.github.io/trident/">here</a>.
+          </Card>
         </div>
+
+        <div class="column is-4">
+          <Card
+          @headerIconName="theater-masks"
+          @headerIconPrefix="fas"
+          @headerIconSize="2x"
+          @title="Theater"
+          @imageSrc="images/nathan.png"
+          @imageAlt="Guys & Dolls"
+          >
+          I dipped my toe into theater in 2015 and quickly became hooked.
+          As much as I enjoy so many of the challenges and rewards of
+          theater, helping to build <strong>high performing teams</strong> within a
+          short period of time may be my favorite part and one of several
+          that directly reflect on <strong>how I approach my work</strong> as well.
+        </Card>
+      </div>
+
+      <div class="column is-4">
       </div>
     </div>
   </div>
+</div>
+</div>
 </section>
 
 
@@ -278,8 +242,44 @@
   </div>
 </section>
 
-<footer class="footer">
+<footer local-class="footer">
   <div local-class="content">
+
+    <div local-class="skills">
+      <div local-class="content">
+        <h4 class="title is-4">Skills Include</h4>
+        <div local-class="tags">
+          <span local-class="tag">JavaScript</span>
+          <span local-class="tag">EmberJS</span>
+          <span local-class="tag">HTML</span>
+          <span local-class="tag">CSS</span>
+          <span local-class="tag">SASS</span>
+          <span local-class="tag">PostCSS</span>
+          <span local-class="tag">JSON</span>
+          <span local-class="tag">JSONAPI</span>
+          <span local-class="tag">AJAX</span>
+          <span local-class="tag">jQuery</span>
+          <span local-class="tag">Objective-C</span>
+          <span local-class="tag">RESTful API</span>
+          <span local-class="tag">Ruby on Rails</span>
+          <span local-class="tag">Ruby</span>
+          <span local-class="tag">Postgres</span>
+          <span local-class="tag">MySQL</span>
+          <span local-class="tag">WebSocket</span>
+          <span local-class="tag">Test-Driven Development</span>
+          <span local-class="tag">RSpec</span>
+          <span local-class="tag">UI/UX</span>
+          <span local-class="tag">Heroku</span>
+          <span local-class="tag">Git</span>
+          <span local-class="tag">Yarn</span>
+          <span local-class="tag">NPM</span>
+          <span local-class="tag">Amazon Web Services (AWS)</span>
+          <span local-class="tag">S3</span>
+          <span local-class="tag">CloudFront</span>
+          <span local-class="tag">IAM</span>
+        </div>
+      </div>
+    </div>
     <div class="section-heading">
       <p>
       </p>

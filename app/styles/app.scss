@@ -4,6 +4,8 @@
 @value sky-blue-crayola: #54defdff;
 @value skobeloff: #096b72ff;
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;800&family=Rubik:wght@600;800;900&display=swap');
+
 $gradient-top: linear-gradient(0deg, #664673ff, #d4cdf4ff, #f4e4baff, #54defdff, #096b72ff);
 $gradient-right: linear-gradient(90deg, #664673ff, #d4cdf4ff, #f4e4baff, #54defdff, #096b72ff);
 $gradient-bottom: linear-gradient(180deg, #664673ff, #d4cdf4ff, #f4e4baff, #54defdff, #096b72ff);
@@ -25,5 +27,8 @@ $warning: $yellow;
 $danger: $red;
 // $dark: $grey-darker;
 // $text: $grey-dark;
+
+$family-primary: 'Lato', sans-serif;
+$family-secondary: 'Rubik', sans-serif;
 
 @import "node_modules/bulma/bulma";

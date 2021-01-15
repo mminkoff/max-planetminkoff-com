@@ -20,6 +20,11 @@ module.exports = function(defaults) {
           { module: require('postcss-preset-env') }
         ]
       }
+    },
+    prember: {
+      urls: [
+        '/'
+      ]
     }
   });
 
