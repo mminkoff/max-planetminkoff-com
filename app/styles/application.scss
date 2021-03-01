@@ -77,25 +77,6 @@
   composes: container from global;
 }
 
-.card {
-  composes: card from global;
-  margin-bottom: 2em;
-}
-.card-header {
-  composes: card-header from global;
-}
-
-.card-header-title {
-  composes: card-header-title from global;
-  // display: block;
-}
-
-.card-header-icon {
-  composes: card-header-icon from global;
-  max-width: 4em;
-  height: auto;
-}
-
 .footer {
   composes: footer from global;
 

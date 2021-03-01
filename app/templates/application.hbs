@@ -13,44 +13,52 @@
           Full Stack Web Developer
         </h2>
         <p local-class="bio">
+          <strong>Multidisciplinary Senior Software Engineer</strong>. Early-stage <strong>startup veteran</strong>
           (with snazzy executive titles to prove it) seeking a <strong>hands-on role</strong> in a more
-            </p>
-            <div class="has-addons">
-              <a href="https://github.com/mminkoff" target="_maxgithub" local-class="social-button">
-                <FaIcon @icon="github" @prefix="fab" />
-                Github
-              </a>
-              <a href="https://www.linkedin.com/in/max-minkoff/" target="_maxlinkedin" local-class="social-button">
-                <FaIcon @icon="linkedin" @prefix="fab" />
-                LinkedIn
-              </a>
-            </div>
-          </div>
+          established organization that <strong>emphasizes enduring value</strong> over short-term payoff.
+          <strong>Industrial engineer</strong> and <strong>Wharton MBA</strong> able to <strong>translate business
+            needs</strong> into <strong>technical solutions</strong> and <strong>explain complex concepts in simple
+            terms</strong>. <strong>Delights in collaborating</strong> with product, engineering, and business team
+          members to create <strong>elegant, extensible, understandable tools</strong> that <strong>exceed
+            goals</strong>
+          and <strong>users love</strong>.
+        </p>
+        <div class="has-addons">
+          <a href="https://github.com/mminkoff" target="_maxgithub" local-class="social-button">
+            <FaIcon @icon="github" @prefix="fab" />
+            Github
+          </a>
+          <a href="https://www.linkedin.com/in/max-minkoff/" target="_maxlinkedin" local-class="social-button">
+            <FaIcon @icon="linkedin" @prefix="fab" />
+            LinkedIn
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section local-class="section" id="portfolio">
-      <div local-class="content">
-        <div class="container">
-          <div class="section-heading">
-            <h3 local-class="section-title">Portfolio</h3>
-            <h4 class="subtitle is-5">Some recent and/or interesting projects</h4>
-          </div>
-          <br>
+<section local-class="section" id="portfolio">
+  <div local-class="content">
+    <div class="container">
+      <div class="section-heading">
+        <h3 local-class="section-title">Portfolio</h3>
+        <h4 class="subtitle is-5">Some recent and/or interesting projects</h4>
+      </div>
+      <br>
 
-          <div local-class="portfolio-container">
-            <div class="columns">
-              <div class="column is-4">
+      <div local-class="portfolio-container">
+        <div class="columns">
+          <div class="column is-4">
             <Card @titleLink="https://goexp.it" @title="eThree's goexp.it"
               @headerIconSrc="images/ethree-logo-blue-white.png" @headerIconAlt="eThree"
               @imageSrc="images/heather-mitts-goexp-it.png" @imageAlt="Heather Mitts on goexp.it">
-                Versatile <strong>web-based learning experience platform</strong>, enabling communicators of
-                all types to engage consumers with students and customers. Built using
+              Versatile <strong>web-based learning experience platform</strong>, enabling communicators of
+              all types to engage consumers with students and customers. Built using
               <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong> and <strong><a
                   href="https://rubyonrails.org/" target="_rails">Ruby on Rails</a></strong> on <strong><a
                   href="https://www.heroku.com/" target="_heroku">Heroku</a></strong>.
-              </Card>
+            </Card>
 
             <Card @titleLink="https://ourgroove.studio" @title="OurGroove.Studio" @imageSrc="images/ourgroovestudio.png"
               @imageAlt="ourgroove.studio screenshot">
@@ -79,40 +87,41 @@
               and <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong>.
             </Card>
 
-            <Card @title="Cookulus Perfect Cookie Recipes" @headerIconSrc="images/cookulus-app.jpg"
-              @headerIconAlt="cookulus app" @imageSrc="images/Cookulus-Full-screen.jpg" @imageAlt="Cookulus screenshot">
-            Unique <strong>configurable cookie recipe app</strong>, adjusting recipes
-            to deliver crispy or soft, chewy or crumbly, and thin or thick cookies.
-            Read what <strong><a href="https://www.newsweek.com/2014/03/14/downloading-delicious-cookie-247931.html
-              " target="_newsweek">Newsweek had to say</a></strong> about it.
+            <Card @titleLink="https://github.com/mminkoff/ember-filestack" @title="ember-filestack"
+              @headerIconName="github" @headerIconPrefix="fab" @headerIconSize="2x">
+              Ember Add-On providing <strong>file picking, storing, and converting functionality</strong>
+              from <a href="https://www.filestack.com/">Filestack</a> using <a
+                href="https://github.com/filestack/filestack-js">filestack-js</a>.
             </Card>
 
-            <Card
-            @titleLink="https://github.com/mminkoff/ember-filestack"
-            @title="ember-filestack"
-            @headerIconName="github"
-            @headerIconPrefix="fab"
-            @headerIconSize="2x"
-            >
-            Ember Add-On providing <strong>file picking, storing, and converting functionality</strong>
-            from <a href="https://www.filestack.com/">Filestack</a> using <a href="https://github.com/filestack/filestack-js">filestack-js</a>.
-          </Card>
-      </div>
+            <Card @title="Cookulus Perfect Cookie Recipes" @headerIconSrc="images/cookulus-app.jpg"
+              @headerIconAlt="cookulus app" @imageSrc="images/Cookulus-Full-screen.jpg" @imageAlt="Cookulus screenshot">
+              Unique <strong>configurable cookie recipe app</strong>, adjusting recipes
+              to deliver crispy or soft, chewy or crumbly, and thin or thick cookies.
+              Read what <strong><a href="https://www.newsweek.com/2014/03/14/downloading-delicious-cookie-247931.html
+                              " target="_newsweek">Newsweek had to say</a></strong> about it.
+            </Card>
 
-      <div class="column is-4">
+            <Card @title="Telestrat Education" @youTubeCode="ZF1LiAHF3L8">
+              Created DVD-based Corporate Finance and Financial Statement training for lawyers and 
+              business profesionals.
+            </Card>
+          </div>
+
+          <div class="column is-4">
             <Card @titleLink="https://schoolsoutindefinitely.com" @title="School's Out Indefinitely"
               @headerIconSrc="images/schoolsout-icon.png" @headerIconAlt="school's out Indefinitely"
               @imageSrc="images/schoolsout.png" @imageAlt="schoolsoutindefinitely.com screenshot">
-        Simple website curating virtual learning resources during the 2020 pandemic and beyond.
+              Simple website curating virtual learning resources during the 2020 pandemic and beyond.
               Uses <a href="airtable.com">Airtable.com</a> for data storage and otherwise static <a
                 href="https://emberjs.com/" target="_ember">EmberJS</a>
               site hosted on <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong>. You can
               <strong><a href="https://github.com/schoolsOut/schoolsOut">view the code here</a></strong>.
-      </Card>
+            </Card>
 
             <Card @title="This Website" @headerIconName="github" @headerIconPrefix="fab" @headerIconSize="2x"
               @imageSrc="images/maxportfolio.png" @imageAlt="max's portfolio website">
-      Simple website to highlight some of my projects and demonstrate
+              Simple website to highlight some of my projects and demonstrate
               some simple code. Uses <strong><a href="https://emberjs.com/" target="_ember">EmberJS</a></strong> and
               <strong><a href="https://bulma.io/" target="_bulma">Bulma CSS Framework</a></strong>, hosted on
               <strong><a href="https://aws.amazon.com/" target="_aws">AWS</a></strong> using <strong>S3</strong> for the
@@ -121,7 +130,7 @@
               <strong><a href="https://aws.amazon.com/lambda" target="_aws">AWS Lambda</a></strong>, and <strong><a
                   href="https://aws.amazon.com/ses" target="_aws">Simple Email Service</a></strong> for the contact
               form.
-    </Card>
+            </Card>
 
 
             <Card @headerIconSrc="images/uw.png" @headerIconAlt="university of washington"
@@ -140,12 +149,12 @@
               independent "displays" (i.e. views) that were responsible for low-latency
               UI, models, and controllers that connected elements to a network-distributed
               database.
-  </Card>
-</div>
-</div>
-</div>
-</div>
-</div>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 

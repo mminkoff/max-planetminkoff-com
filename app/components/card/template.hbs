@@ -28,6 +28,11 @@
     </div>
   {{/if}}
 
+  {{#if @youTubeCode}}
+    <iframe id="ytplayer" type="text/html" height="250"
+       src="https://www.youtube.com/embed/{{@youTubeCode}}" frameborder="0" allowfullscreen />
+  {{/if}}
+
   <div local-class="card-content">
     {{yield}}
   </div>

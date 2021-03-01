@@ -6,6 +6,10 @@
   &:last-of-type {
     margin-bottom: 1em;
   }
+
+  & iframe {
+    width: 100%;
+  }
 }
 
 .card-header {
