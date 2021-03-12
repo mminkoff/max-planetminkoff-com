@@ -1,16 +1,16 @@
-<div local-class="contact-form" data-test-display="contact-form">
+<form local-class="contact-form" data-test-display="contact-form" {{on "submit" this.submitContact}}>
   <fieldset disabled={{@isSubmitted}}>
     <div class="field">
-      <label class="label">Name</label>
+      <label for="contact-name" class="label">Name</label>
       <div class="control">
-        <Input class="input" @type="text" @placeholder="Text input" @value={{this.name}} data-test-input="name" />
+        <Input id="contact-name" class="input" @type="text" @placeholder="Name" @value={{this.name}} data-test-input="name" />
       </div>
     </div>
 
     <div class="field">
-      <label class="label">Email</label>
+      <label for="contact-email" class="label">Email</label>
       <div class="control has-icons-left">
-        <Input class="input" @type="email" @placeholder="Email input" @value={{this.email}} data-test-input="email" />
+        <Input id="contact-email" class="input" @type="email" @placeholder="Email" @value={{this.email}} data-test-input="email" />
         <span class="icon is-small is-left">
           <FaIcon @prefix="fas" @icon="envelope" />
         </span>
@@ -18,16 +18,16 @@
     </div>
 
     <div class="field">
-      <label class="label">Message</label>
+      <label for="contact-message" class="label">Message</label>
       <div class="control">
-        <Textarea class="textarea" @placeholder="Please include a note" @value={{this.message}} data-test-input="message"></Textarea>
+        <Textarea id="contact-message" class="textarea" @placeholder="Please include a note" @value={{this.message}} data-test-input="message"></Textarea>
       </div>
     </div>
 
     <div class="field is-grouped has-text-centered">
       <div local-class="submit-control">
         <div class="level-left">
-          <button type="submit" local-class="submit-button {{if @isSubmitted 'submitted'}}" {{on "click" this.submitContact}} data-test-action="submit-contact">
+          <button type="submit" local-class="submit-button {{if @isSubmitted 'submitted'}} {{unless this.formValid "disabled"}}" disabled={{not this.formValid}} data-test-action="submit-contact">
             <span class="icon">
               <FaIcon prefix="fas" @icon="envelope" />
             </span>
@@ -45,4 +45,4 @@
     </div>
 
   </fieldset>
-</div>
+</form>

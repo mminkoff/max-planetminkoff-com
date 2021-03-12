@@ -15,6 +15,10 @@
   composes: is-success from global;
 }
 
+.disabled {
+  
+}
+
 .success-message {
   composes: level-item from global;
   margin: 0.25em 0.5em;

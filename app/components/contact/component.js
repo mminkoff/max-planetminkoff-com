@@ -7,8 +7,14 @@ export default class ContactComponent extends Component {
   @tracked email = "";
   @tracked message = "";
 
+  get formValid() {
+    return this.name && this.email && this.message;
+  }
+
   @action
-  submitContact() {
+  submitContact(evt) {
+    evt.preventDefault();
+    
     const contactInfo = {
       name: this.name,
       email: this.email,
